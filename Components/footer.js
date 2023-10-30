@@ -1,6 +1,6 @@
 function generateFooter() {
     return `
-    <footer class="footer">
+    <footer class='footer'>
     <div class="container">
       <div class="col1">
         <a href="#" class="brand">AUTOBAHN</a>
