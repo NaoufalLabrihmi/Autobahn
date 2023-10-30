@@ -2,7 +2,7 @@ function generateNavbar() {
     return `
     <header>
         <nav>
-            <li class="logo"><a href='#'><img src='images/logo1.png'/></a></li>
+            <li class="logo"><a href='#'><img src="images/logo1.png"/></a></li>
             <ul class='nav-barr'>
                 
                 <input type='checkbox' id='checkk' />
