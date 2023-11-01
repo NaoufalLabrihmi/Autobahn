@@ -245,7 +245,7 @@ img{
 }
 
 .featured__content{
-    grid-template-columns: repeat(2,228px);
+    grid-template-columns: repeat(3,200px);
     row-gap: 2.5rem;
     justify-content: center;
 }
