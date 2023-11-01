@@ -201,7 +201,7 @@ nav ul li a:hover{
         justify-content: flex-end;
     }
     .logo {
-        display: block; /* Add this line to ensure the logo is visible */
+        display: block; 
         z-index: 2;
     }
 }
