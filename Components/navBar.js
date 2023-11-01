@@ -12,7 +12,6 @@ function generateNavbar() {
                     <li><a href="index.html">Home</a></li>
                     <li><a href="About.html">About</a></li>
                     <li><a href="">Cars</a></li>
-                    <li><a href="">MotorSport</a></li>
                     <li><a href="">Support</a></li>
                     <li><a href=""><i class="fas fa-shopping-cart"></i></a></li> <!-- Shopping cart icon -->
                     <label for="checkk" class="close-menuu"><i class="fas fa-times"></i></label>
