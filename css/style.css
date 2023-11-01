@@ -27,6 +27,7 @@ body{
     margin-top: 2rem;
     margin-bottom: 1rem;
     position: fixed;
+    z-index: 11;
 }
 .navbar{
     display: flex;
@@ -46,6 +47,7 @@ body{
     transform: translateX(-10px);
     cursor: pointer;
     transition: all ease-in-out 0.3s;
+    margin-left: 20px;
 }
 
 .logo img:hover{
