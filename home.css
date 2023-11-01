@@ -855,7 +855,8 @@ nav ul li a:hover{
     padding-bottom: 20px;
   }
   .wrapper .box{
-    background: #fff;
+    border: 1px solid white;
+    background: #000000;
     width: calc(33% - 10px);
     padding: 25px;
     border-radius: 3px;
@@ -875,11 +876,15 @@ nav ul li a:hover{
   .box .info .name{
     font-weight: 600;
     font-size: 17px;
+    color: var(--hov-color);
+  }
+  .box p{
+    color: #fff;
   }
   .box .info .job{
     font-size: 16px;
     font-weight: 500;
-    color:var(--hov-color)
+    color: wheat;
   }
   .box .info .stars{
     margin-top: 2px;
