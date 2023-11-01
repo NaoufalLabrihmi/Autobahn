@@ -79,34 +79,6 @@ img{
     
 }
 
-.shape{
-    background-color: hsl(219, 33%, 32%, .5);
-    filter: brightness(112px);
-    border-radius: 50%;
-}
-
-.shape__big{
-    width: 400px;
-    height: 400px;
-}
-
-.shape__small{
-    width: 300px;
-    height: 300px;
-}
-
-/* .main{
-        background: url("img/cars\ bg.jpg") no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        background-color: transparent;
-} */
-
-
 /*-------- popular ---------*/
 .popular__container{
     padding-top: 1rem;
@@ -252,7 +224,7 @@ img{
 
 .featured__card{
     position: relative;
-    background-color:  #D9D9D9;
+    background-color:  #232a30;
     padding: 15rem 1.5rem 1.5rem;
     border-radius: 1rem;
 }
@@ -320,6 +292,7 @@ img{
 .active-featured img{
     opacity: 1;
 }
+
 
 /*---------nav and footer------*/
 
