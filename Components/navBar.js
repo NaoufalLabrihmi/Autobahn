@@ -9,8 +9,8 @@ function generateNavbar() {
                 
                 <input type='checkbox' id='checkk' />
                 <span class="menuu">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
                     <li><a href="">Cars</a></li>
                     <li><a href="">MotorSport</a></li>
                     <li><a href="">Support</a></li>
