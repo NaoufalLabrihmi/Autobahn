@@ -457,3 +457,9 @@ footer {
 #search:focus {
     outline: none;
 }
+
+/* --------------pagination----------- */
+.active{
+    padding: 5px 10px;
+    background: blue;
+}
