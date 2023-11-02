@@ -1,11 +1,11 @@
 let productCars = [ 
-    { id: 1, image: 'img/featured1.png', name: 'Tesla',model:'model X' ,price: 120.000, },
-    { id: 2, image: 'img/featured2.png', name: 'Porsche',model:'Boxter 987', price: 160.000, }, 
-    { id: 3, image: 'img/featured3.png', name: 'Audi',model:'E-tron ' ,price: 130.00, },
-    { id: 4, image: 'img/featured4.png', name: 'Tesla',model:'model 3', price: 100.000, },
-    { id: 5, image: 'img/audi rs6.png', name: 'Audi',model:'rs6' ,price: 220.000, },
-    { id: 6, image: 'img/718 cayma.png', name: 'Porsche',model:'718 cayma', price: 260.000, }, 
-    { id: 7, image: 'img/audi q8.png', name: 'Audi',model:'Q8 ' ,price: 230.878, }
+    { id: 0, image: 'img/featured1.png', name: 'Tesla',model:'model X' ,price: 120.000, },
+    { id: 1, image: 'img/featured2.png', name: 'Porsche',model:'Boxter 987', price: 160.000, }, 
+    { id: 2, image: 'img/featured3.png', name: 'Audi',model:'E-tron ' ,price: 130.00, },
+    { id: 3, image: 'img/featured4.png', name: 'Tesla',model:'model 3', price: 100.000, },
+    { id: 4, image: 'img/audi rs6.png', name: 'Audi',model:'rs6' ,price: 220.000, },
+    { id: 5, image: 'img/718 cayma.png', name: 'Porsche',model:'718 cayma', price: 260.000, }, 
+    { id: 6, image: 'img/audi q8.png', name: 'Audi',model:'Q8 ' ,price: 230.878, }
 ];
 
 
@@ -57,25 +57,27 @@ function cars() {
    
     itemscars.innerHTML = '';  
     
-    paginatedProducts.map(product => { 
+    paginatedProducts.map((product,index) => { 
+        const {id, image, name, price,model } = product;
+        console.log(product);
         const productItem = document.createElement('div');
         productItem.classList.add('col-md-4', 'mb-3');
         productItem.innerHTML = `
-        <article class="featured__card" mix="${product.name}">
-            <div class="shape shape__smaller">
-                <h1 class="featured__title">${product.name}</h1>
-                <h3 class="featured__subtitle">${product.model}</h3>
-                <img src="${product.image}" alt="" class="featured__img">
-                <h3 class="featured__price">$${product.price}</h3>
+        <article class="featured__card"  mix tesla>
+        <div class="shape__smaller">
+            <h1 class="featured__title">${name}</h1>
 
-                <button class="button featured__button"id='${product.id}' onclick=()>
-=======
-                <button class="button featured__button" id=""${product.id}"  onclick="">
+            <h3 class="featured__subtitle">${model}</h3>
 
-                    <i class="ri-shopping-bag-2-line"></i>
-                </button>
-            </div>
-        </article>
+            <img src="${image}"  class="featured__img" onclick="navigateToCart(${id})">
+            
+            <h3 class="featured__price">$${price}</h3>
+
+            <button class="button featured__button" onclick="addtocart(${index})">
+                <i class="ri-shopping-bag-2-line"></i>
+            </button>
+        </div>
+    </article>
         `;
         itemscars.appendChild(productItem);
     });
@@ -86,7 +88,7 @@ cars();
 
 
 
-// Function to render pagination buttons
+
 function renderPagination(totalItems) { 
     const totalPages = Math.ceil(totalItems / itemsPerPage);
     pagination.innerHTML = '';
@@ -111,5 +113,19 @@ function renderPagination(totalItems) {
         listItem.appendChild(link);
         pagination.appendChild(listItem);
     }
+}
+
+let cart = [];
+function addtocart(i) {
+    const selectedProduct = productCars[i];
+     cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    
+    cart.push(selectedProduct);
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+    const cartCountElement = document.getElementById('count');
+    cartCountElement.innerText = cart.length;
+    
 }
 cars();
