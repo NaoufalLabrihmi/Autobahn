@@ -63,6 +63,7 @@ function cars() {
         const productItem = document.createElement('div');
         productItem.classList.add('col-md-4', 'mb-3');
         productItem.innerHTML = `
+        <a href="carsInfo.html">
         <article class="featured__card"  mix tesla>
         <div class="shape__smaller">
             <h1 class="featured__title">${name}</h1>
@@ -72,7 +73,7 @@ function cars() {
             <img src="${image}"  class="featured__img" onclick="navigateToCart(${id})">
             
             <h3 class="featured__price">$${price}</h3>
-
+            </a>
             <button class="button featured__button" onclick="addtocart(${index})">
                 <i class="ri-shopping-bag-2-line"></i>
             </button>
