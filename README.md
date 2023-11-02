@@ -22,9 +22,9 @@ Le site AUTOBAHN comprend une navigation conviviale avec les sections suivantes 
 Pour faciliter la collaboration et le suivi, voici quelques liens importants :
 
 - [Figma https://www.figma.com/file/a6n2i8NZ9Db05GRyoV9c91/AUTOBAHN?type=design&node-id=0-1&mode=design&t=6FiQ3oPC8D142oqu-0]
-- [Déploiement [https://youcode-classe-e-2023-2024.github.io/SAMAH__startup/index.html]
-- [Kanban https://github.com/orgs/Youcode-Classe-E-2023-2024/projects/18]
-- [Backlog https://github.com/orgs/Youcode-Classe-E-2023-2024/projects/18/views/3]
+- [Déploiement [https://youcode-classe-e-2023-2024.github.io/SAMAH__startup/index.html]]
+- [Kanban [https://github.com/orgs/Youcode-Classe-E-2023-2024/projects/18]]
+- [Backlog [https://github.com/orgs/Youcode-Classe-E-2023-2024/projects/18/views/3]]
 
 ## Tâches d'Équipe
 
