@@ -13,7 +13,7 @@ function generateNavbar() {
                     <li><a href="About.html">About</a></li>
                     <li><a href="">Cars</a></li>
                     <li><a href="">Support</a></li>
-                    <li><a href=""><i class="fas fa-shopping-cart"></i></a></li> <!-- Shopping cart icon -->
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart" id="count" ></i></a></li> <!-- Shopping cart icon -->
                     <label for="checkk" class="close-menuu"><i class="fas fa-times"></i></label>
                 </span>
                 <label for="checkk" class="open-menuu"><i class="fas fa-bars"></i></label>
@@ -28,5 +28,13 @@ document.addEventListener('DOMContentLoaded', function () {
     if (navbar) {
         navbar.innerHTML = generateNavbar();
     }
+
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+updateCartCount(cart.length);
+
+function updateCartCount(count) {
+    const cartCountElement = document.getElementById('count');
+    cartCountElement.innerText = count;
+}
 });
 
