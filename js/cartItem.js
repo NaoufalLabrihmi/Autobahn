@@ -25,7 +25,7 @@ function diplayAddedCars() {
        totalspan.innerHTML = '';
     } else {
         document.getElementById("cartItem").innerHTML = cartItems.map((item, index) => {
-            var { image, model, title, price, quantity } = item;
+            var { image, model, name, price, quantity } = item;
             total += price * quantity;
             
             document.getElementById("total").innerHTML = "$ " + total.toFixed(2);
@@ -36,7 +36,7 @@ function diplayAddedCars() {
            <tr  class="row ">
                 <td class="Tcol1" >
                     <img src="${image}" style="width: 35px; height: 35px;">
-                    <p>${title} ${model}</p>
+                    <p>${name} ${model}</p>
                 </td>
                 <td ><p>x${price}</p></td>
                 <td class="Tcol3">
