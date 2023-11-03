@@ -88,6 +88,29 @@
               </nav>
         </div>
 
+        <script>
+            function setActiveFeatured(button) {
+              const featuredItems = document.querySelectorAll('.featured__item');
+          
+              // Remove the 'active-featured' class from all buttons
+              featuredItems.forEach(item => {
+                item.classList.remove('active-featured');
+              });
+          
+              // Add the 'active-featured' class to the clicked button
+              button.classList.add('active-featured');
+            }
+          
+            const featuredButtons = document.querySelectorAll('.featured__item');
+          
+            // Attach a click event listener to each button
+            featuredButtons.forEach(button => {
+              button.addEventListener('click', () => {
+                setActiveFeatured(button);
+              });
+            });
+          </script>
+
         <div id="footer"></div>
         <script src="Components/navBar.js"></script>
         <script src="Components/footer.js"></script>
