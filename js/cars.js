@@ -21,7 +21,7 @@ let all = document.getElementById('all'); //ALLcategories
 const searchInput = document.getElementById('search'); //input search  
 const pagination = document.getElementById('pagi');//paganination
 
-const itemsPerPage = 6;
+let itemsPerPage = 6;
 let currentPage = 1;
 
 let category = 'all'; 
@@ -45,6 +45,8 @@ all.addEventListener('click', function() {
 brands.forEach(button => {     
 button.addEventListener('click', function() {
     category = this.value;
+     itemsPerPage = 6;
+     currentPage = 1;
     cars();
 });
 });
