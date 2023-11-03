@@ -19,7 +19,7 @@ html {
 
 html {
   font-family: #0a0a0b;
-  font-size: 0.813rem;
+  /* font-size: 0.813rem; */
   background-color: #232a30;
   color: #babec4;
 }
@@ -36,7 +36,7 @@ h1,
 h2,
 h3 {
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 ul {
