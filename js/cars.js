@@ -69,7 +69,7 @@ function cars() {
         const productItem = document.createElement('div');
         productItem.classList.add('col-md-4', 'mb-3');
         productItem.innerHTML = `
-        <a href="carsInfo.html">
+        <a href="./carsInfo.html">
         <article class="featured__card"  mix tesla>
         <div class="shape__smaller">
             <h1 class="featured__title">${name}</h1>
