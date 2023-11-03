@@ -257,8 +257,10 @@ img {
 }
 
 .featured__price {
+  position: absolute;
   font-size: 1rem;
   padding-left: 10px;
+  bottom: 10px;
 }
 
 .featured__button {
@@ -707,4 +709,3 @@ hafsa1 img {
   width: 100%;
   height: auto;
 }
-
