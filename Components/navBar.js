@@ -11,7 +11,7 @@ function generateNavbar() {
                 <span class="menuu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="About.html">About</a></li>
-                    <li><a href="">Cars</a></li>
+                    <li><a href="cars.html">Cars</a></li>
                     <li><a href="Support.html">Support</a></li>
                     <li><a href="cart.html"><i class="fas fa-shopping-cart" id="count" ></i></a></li> <!-- Shopping cart icon -->
                     <label for="checkk" class="close-menuu"><i class="fas fa-times"></i></label>
