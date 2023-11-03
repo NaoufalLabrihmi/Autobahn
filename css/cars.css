@@ -280,7 +280,7 @@ img {
   transform: translateX(-0.25rem);
 }
 
-.active-featured {
+.featured__item.active-featured:active {
   background-color: #4178dc;
 }
 
@@ -696,3 +696,15 @@ footer .container {
     opacity: 1;
   }
 }
+
+hafsa1 img {
+  max-width: 90%; /* Adjust the value as needed */
+  display: block;
+  margin: 0 auto;
+}
+
+.full-width-image img {
+  width: 100%;
+  height: auto;
+}
+
